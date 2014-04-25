@@ -10,7 +10,7 @@
 B::B() {
 	std::cout << "constructor" << std::endl;
 
-	this->myName = "Eu sou a classe G";
+	this->myName = "Eu sou a classe B";
 
 }
 
