@@ -133,5 +133,9 @@ Ao final desta etapa por convenção devemos criar alguns arquivos
 $ touch NEWS README AUTHORS ChangeLog COPYING
 ```
 
+Para inicializar nosso projeto utilizamos o comando *autoreconf*
 
+```bash
+$ autoreconf -i -v
+```
 
