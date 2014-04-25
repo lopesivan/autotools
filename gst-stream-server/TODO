@@ -1,0 +1,16 @@
+
+
+- move gss_server_log out of gss-server
+
+- control to disable all public access
+
+
+
+
+documentation:
+
+- info to set up an EC2 instance
+
+
+
+
