@@ -1,25 +1,4 @@
-/*
- * Copyright (c) 2014 André Tupinambá (andrelrt@gmail.com)
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-//-----------------------------------------------------------------------------
+
 #include "boostSimd.h"
 #include <iostream>
 #include <iomanip>
@@ -27,7 +6,7 @@
 
 int main()
 {
-    size_t width = 500; // Coloque sempre números múltiplos de 4
+    size_t width = 500; // Coloque sempre nï¿½meros mï¿½ltiplos de 4
     size_t height = width; // Testei somente com matrizes quadradas
 
     size_t loopCount = 50;
@@ -54,7 +33,7 @@ int main()
 
     boost::timer::cpu_timer timer;
 
-    srand( time(NULL) ); // Para depurar é melhor colocar uma constante aqui, vai ser sempre a mesma matriz
+    srand( time(NULL) ); // Para depurar ï¿½ melhor colocar uma constante aqui, vai ser sempre a mesma matriz
     setupMatrix( baseMatrix );
     setupMatrix( baseFactor );
 
