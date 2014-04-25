@@ -27,8 +27,8 @@ dnl Criando função
 # AC_DEFINE_SUBST(NAME, VALUE, DESCRIPTION)
 # -----------------------------------------
 AC_DEFUN([AC_DEFINE_SUBST], [
-AC_DEFINE([$1], [$2], [$3])
-AC_SUBST([$1], ['$2'])
+  AC_DEFINE([$1], [$2], [$3])
+  AC_SUBST([$1], ['$2'])
 ])
 
 AC_DEFINE_SUBST(CONF_XDISP, "Here...", X screen number)
