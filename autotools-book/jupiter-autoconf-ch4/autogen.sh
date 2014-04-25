@@ -1,3 +1,6 @@
-#!/bin/sh
-autoreconf --install
-automake --add-missing --copy >/dev/null 2>&1
+#!/usr/bin/env bash
+
+touch NEWS README AUTHORS ChangeLog COPYING
+autoreconf -i -v && ./configure && make
+
+exit 0
