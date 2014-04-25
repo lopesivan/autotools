@@ -6,7 +6,7 @@ libtestlib_ladir = $(includedir)
 # LDFLAGS documented here:
 # http://sourceware.org/autobook/autobook/autobook_88.html
 # http://sourceware.org/autobook/autobook/autobook_172.html#SEC172
-libtestlib_la_LDFLAGS = -avoid-version
+#libtestlib_la_LDFLAGS = -avoid-version
 
 bin_PROGRAMS = testapp
 testapp_SOURCES = testapp.c
