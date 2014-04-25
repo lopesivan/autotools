@@ -122,11 +122,11 @@ AC_SUBST(FFMPEG_LIBS)
 #### end: pkg-config
 
 ### begin: pkg-config
-PKG_PROG_PKG_CONFIG
-PKG_CHECK_MODULES(XXX, QtDBus libpostproc)
+#PKG_PROG_PKG_CONFIG
+#PKG_CHECK_MODULES(XXX, QtDBus libpostproc)
 
-AC_SUBST(XXX_CFLAGS)
-AC_SUBST(XXX_LIBS)
+#AC_SUBST(XXX_CFLAGS)
+#AC_SUBST(XXX_LIBS)
 #### end: pkg-config
 
 AC_PROG_LN_S    # faz LN_S="ln -s"
@@ -146,15 +146,15 @@ dnl se as variáveia abaixo não forem vazias eu crio a variável
 dnl `CONFIG_TEX' do Makefile.am.
 AM_CONDITIONAL(CONFIG_TEX, [
   test ! \( -z "$LATEX"     -o \
-              -z "$MAKEINDEX" -o \
-              -z "$PDFLATEX"  -o \
-              -z "$DVIPS" \)])
+            -z "$MAKEINDEX" -o \
+            -z "$PDFLATEX"  -o \
+            -z "$DVIPS" \)])
 
 AS_IF([test -z "$LATEX"    -o \
             -z "$PDFLATEX" -o \
-      -z "$DVIPS"    -o \
-      -z "$PS2PDF"],
-    [AC_MSG_WARN([Some documentation formats may not build, because latex/pdflatex/dvips is missing.])])
+            -z "$DVIPS"    -o \
+            -z "$PS2PDF"],
+  [AC_MSG_WARN([Some documentation formats may not build, because latex/pdflatex/dvips is missing.])])
 
 AC_ARG_VAR([JAVA_HOME],
            [Path to the root of the Java environment])
@@ -190,4 +190,5 @@ AC_CONFIG_FILES([Makefile
                  maple/Makefile
                  maple/exemplo01/Makefile])
 AC_OUTPUT
+
 
