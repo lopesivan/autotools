@@ -139,3 +139,15 @@ Para inicializar nosso projeto utilizamos o comando *autoreconf*
 $ autoreconf -i -v
 ```
 
+Alguns programadores transformam estas etapas finais em um programa bash
+chakado *autogen.sh*
+
+```bash
+#!/usr/bin/env bash
+
+touch NEWS README AUTHORS ChangeLog COPYING
+autoreconf -i -v
+
+exit 0
+```
+
