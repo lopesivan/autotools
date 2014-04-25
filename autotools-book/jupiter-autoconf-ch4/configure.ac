@@ -9,6 +9,7 @@ AC_CONFIG_HEADERS([config.h])
 # Checks for programs.
 AC_PROG_CC
 AC_PROG_INSTALL
+AM_INIT_AUTOMAKE($PACKAGE_NAME,$PACKAGE_VERSION)
 
 # Checks for command line options
 AC_ARG_ENABLE([async-exec],
