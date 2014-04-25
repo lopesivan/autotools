@@ -127,3 +127,11 @@ AC_CONFIG_FILES([Makefile
 AC_OUTPUT
 ```
 
+Ao final desta etapa por convenção devemos criar alguns arquivos
+
+```bash
+$ touch NEWS README AUTHORS ChangeLog COPYING
+```
+
+
+
