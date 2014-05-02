@@ -13,6 +13,8 @@ AC_PROG_CXX
 # These are the same locations as your Makefile.in's, but named as Makefile only
 # We need to do this because both Autoconf and Automake read this file and 
 # produce Makefiles from this list.
-AC_CONFIG_FILES([Makefile my_inc/Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile 
+                 my_inc/Makefile 
+                 src/Makefile])
 # Finally produce "configure" script
 AC_OUTPUT
