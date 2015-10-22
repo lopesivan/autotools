@@ -1,6 +1,6 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
-AC_INIT([hello], [0.01], [ivan@42algoritmos.com.br],
+AC_INIT([hello], [0.02], [ivan@42algoritmos.com.br],
         [hello], [http://42algoritmos.com.br/])
 # Force autoconf to be at least this version number:
 AC_PREREQ([2.68])
