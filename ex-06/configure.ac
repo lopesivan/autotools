@@ -27,6 +27,7 @@ AC_PROG_RANLIB
 # Checks for libraries.
 
 # Checks for header files.
+AC_CHECK_HEADERS([stdlib.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
 
@@ -38,9 +39,9 @@ AC_CONFIG_FILES([ Makefile
 
 AC_OUTPUT
 
-echo \
-"-------------------------------------------------
-
+AC_MSG_RESULT(
+[
+--------------------------------------------------
  ${PACKAGE_NAME} Version ${PACKAGE_VERSION}
 
  Prefix: '${prefix}'.
@@ -55,5 +56,4 @@ echo \
      all                - build all binaries
      install            - install everything
 
---------------------------------------------------"
-
+--------------------------------------------------])

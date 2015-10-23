@@ -3,3 +3,5 @@ noinst_LIBRARIES = liblist.a
 liblist_a_CPPFLAGS = -I$(top_srcdir)/include
 liblist_a_SOURCES = list.c
 
+#include_HEADERS=$(top_srcdir)/include/list.h
+
