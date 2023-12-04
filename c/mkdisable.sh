@@ -6,6 +6,7 @@ VAR_NAME=$1
 # Verifica se o nome da variável foi fornecido
 if [ -z "$VAR_NAME" ]; then
 	echo "Usage: mkdisable <variable-name>"
+	echo "Example: ./mkdisable gnu-args"
 	exit 1
 fi
 

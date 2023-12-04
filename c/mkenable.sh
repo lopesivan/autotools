@@ -5,7 +5,8 @@ VAR_NAME=$1
 
 # Verifica se o nome da variável foi fornecido
 if [ -z "$VAR_NAME" ]; then
-	echo "Usage: mkdisable <variable-name>"
+	echo "Usage: mkenable <variable-name>"
+	echo "Example: ./mkenable debug"
 	exit 1
 fi
 
