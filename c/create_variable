@@ -1,0 +1,14 @@
+## "config.h"
+# Put configuration results here, #include "config.h"
+AC_CONFIG_HEADERS([config.h])
+
+## "config.h" -> LICENSE_URL
+# Crio uma variável no config.h de nome `LICENSE_URL' e seto como
+# "http://gnu.org/licenses/gpl.html".
+AC_DEFINE(LICENSE_URL, ["http://gnu.org/licenses/gpl.html"], [Essa variável aparece no config.h])
+
+## "config.h" -> AUTHOR
+# Crio uma variável no config.h de nome `AUTHOR' e seto como
+# "Ivan Lopes".
+AC_DEFINE(AUTHOR, ["Ivan Lopes"], [Essa variável aparece no config.h])
+
