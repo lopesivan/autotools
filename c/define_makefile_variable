@@ -1,0 +1,23 @@
+
+# AC_DEFINE_SUBST(NAME, VALUE, DESCRIPTION)
+# -----------------------------------------
+AC_DEFUN([AC_DEFINE_SUBST], [
+  AC_DEFINE([$1], [$2], [$3])
+  AC_SUBST([$1], ['$2'])
+])
+
+AC_DEFINE_SUBST(AAAAAAA, "Here...", X screen number)
+AC_DEFINE_SUBST(BBBBBBB, "JJJJJHere...", screen number)
+AC_DEFINE_SUBST(UNITE_MODE, "red mode on", modo vermelho ativo)
+
+Makefile.am
+teste:
+	@echo == DEFINED: $(AAAAAAA) ==
+	@echo == DEFINED: $(BBBBBBB) ==
+	@echo == DEFINED: $(UNITE_MODE) ==
+
+output:
+ I  $ make teste
+== DEFINED: Here... ==
+== DEFINED: JJJJJHere... ==
+== DEFINED: red mode on ==
