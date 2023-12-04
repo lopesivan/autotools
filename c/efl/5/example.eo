@@ -1,0 +1,2 @@
+class Example.Rectangle extends Efl.Object {
+}

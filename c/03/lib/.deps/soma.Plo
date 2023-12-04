@@ -1,0 +1,5 @@
+soma.lo: soma.c /usr/include/stdc-predef.h soma.h
+
+/usr/include/stdc-predef.h:
+
+soma.h:

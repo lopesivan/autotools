@@ -1,0 +1,7 @@
+class Example.Square extends Example.Rectangle {
+	implements {
+		Example.Rectangle.width {set;}
+		Example.Rectangle.height {set;}
+	}
+}
+

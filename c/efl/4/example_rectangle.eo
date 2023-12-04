@@ -1,0 +1,29 @@
+//eolian_gen -gchi example_rectangle.eo
+
+class Example.Rectangle extends Efl.Object {
+   methods {
+      @property width {
+         set {
+         }
+         get {
+         }
+         values {
+            width: int;
+         }
+      }
+      @property height {
+         set {
+         }
+         get {
+         }
+         values {
+            height: int;
+         }
+      }
+      area {
+         params {
+         }
+         return: int;
+      }
+   }
+}
