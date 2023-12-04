@@ -19,6 +19,8 @@ AM_CONDITIONAL(CONFIG_TEX, [
             -z "$PDFLATEX"  -o \
             -z "$DVIPS" \)])
 
+
+dnl se não existe variável. mostre mensagem de WARNING
 AS_IF([test -z "$LATEX"    -o \
             -z "$PDFLATEX" -o \
             -z "$DVIPS"    -o \
