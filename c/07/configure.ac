@@ -17,9 +17,6 @@ AC_CONFIG_HEADERS([config.h])
 # Verificar FFmpeg
 PKG_CHECK_MODULES([FFMPEG], [libavcodec libavutil libavformat])
 
-# Verificar FFmpeg
-PKG_CHECK_MODULES([FFMPEG], [libavcodec libavutil libavformat])
-
 # Verificar GTK+
 PKG_CHECK_MODULES([GTK], [gtk+-3.0])
 
